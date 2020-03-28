@@ -1,0 +1,21 @@
+[package]
+name = "gui-rust"
+version = "0.1.0"
+authors = ["dop3ch3f"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gio = "0.8.0"
+reqwest = { version = "0.10", features = ["json", "stream"] }
+tokio = { version = "0.2", features = ["full"] }
+tempdir = "0.3.7"
+tempfile = "3.1.0"
+bytes = { version = "0.5", features = ["serde"] }
+futures-core = "0.3.4"
+rand = "0.7.3"
+
+[dependencies.gtk]
+version = "0.8.0"
+features = ["v3_16"]
